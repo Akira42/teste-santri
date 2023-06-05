@@ -218,7 +218,7 @@
 
 @media only screen and (max-width: 1024px) {
     .details-qty-input {
-        padding:1rem;
+        padding:1rem 0;
     }
 
     .details-top-wrapper > div{
