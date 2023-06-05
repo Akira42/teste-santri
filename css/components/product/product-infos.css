@@ -1,0 +1,249 @@
+.details-top-wrapper {
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.details-top-wrapper > div {
+    flex: 0 0 calc(50% - 1.5rem);
+    width: calc(50% - 1.5rem);
+}
+
+.details-qty-selector {
+    flex: 0 0 33.333%;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 1px solid var(--cinza-escuro);
+}
+
+.details-qty-inc, .details-qty-dec {
+    flex: 0 0 25%;
+    width: 25%;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--cinza-escuro);
+}
+
+.details-qty-input {
+    flex: 0 0 50%;
+    width: 50%;
+    text-align: center;
+    border:none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Montserrat;
+    color:var(--cinza-escuro);
+    padding: 0;
+}
+
+.details-reviews > div {
+    margin-left: 1rem;
+    color: var(--cor-secundaria);
+}
+
+.details-buy-btn {
+    flex: 0 0 calc(66.666% - 2rem);
+
+    text-align: center;
+    display: block;
+    padding: 1rem 0;
+    background: var(--cor-primaria);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.details-top-main-title {
+    font-size: 2.5rem;
+    font-weight:bold;
+    margin-bottom: 0.5rem;
+}
+
+.details-top-brand {
+    display:block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.details-reviews {
+    display:flex;
+    margin-bottom: 1rem;
+}
+
+.details-short-description, .details-prices, .details-qty-buy, .details-top-wrapper {
+    margin-bottom: 2rem;
+}
+
+.details-qty-buy {
+    gap: 2rem;
+}
+
+.details-price-current {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight:bold;
+}
+
+.details-price-current span {
+    font-size: 1rem;
+    font-weight:400;
+}
+
+.details-price-former {
+    text-decoration: line-through;
+}
+
+.details-price-former, .details-short-description p, .details-buy-btn {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight:bold;
+}
+
+.details-middle {
+    margin-bottom: 3rem;
+}
+
+.slick-dots {
+    display: flex;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
+.slick-dots li {
+    width: 15%;
+    flex: 0 0 15%;
+}
+
+
+.slick-dots::-webkit-scrollbar {
+    height: .5rem;
+    width: .5rem;
+}
+  
+.slick-dots::-webkit-scrollbar-track {
+    background: var(--cinza-claro); 
+    border-radius: 22px;
+}
+
+.slick-dots::-webkit-scrollbar-thumb {
+    background: var(--cor-primaria); 
+    border-radius: 22px;
+}
+
+.slick-dots::-webkit-scrollbar-thumb:hover {
+    background: var(--cinza-escuro);  
+}
+
+.slick-dots {
+    padding-bottom: 1.5rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.slick-dots li {
+    width: 100%;
+}
+
+.slick-dots li img {
+    width: 100%!important;
+    border:1px solid transparent;
+}
+
+.slick-dots .slick-active img {
+    border:1px solid var(--cinza-escuro);
+    border-radius: 10px;
+}
+
+.details-images {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.details-cep {
+    flex-wrap:wrap;
+    column-gap: 2rem;
+}
+
+.details-cep-label, .details-cep > span {
+    flex: 0 0 33.333%;
+}
+
+.details-cep-label {
+    margin: auto 0;
+    font-weight:bold;
+}
+
+.details-cep > form, .details-find-cep {
+    flex: 0 0 calc(66.666% - 2rem);
+}
+
+.details-cep-submit {
+    width: 33.333%;
+    flex: 0 0 33.333%;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    padding: calc(1rem - 1px) 0;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid var(--cor-primaria);
+    background:var(--cor-primaria);
+    color:var(--branco);
+}
+
+.details-cep-input {
+    width: calc(66.666% - 2rem);
+    flex: 0 0 calc(66.666% - 2rem);
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    padding: calc(1rem - 1px);
+    border-radius: 10px 0 0 10px;
+    border: 1px solid var(--cinza-escuro);
+}
+
+.details-find-cep {
+    margin-top: 1rem;
+
+    width: fit-content;
+    flex: 0 0 auto;
+    color: var(--cinza-escuro);
+}
+
+.details-image-item img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .details-qty-input {
+        padding:1rem;
+    }
+
+    .details-top-wrapper > div{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .details-cep-label {
+        margin-bottom:1rem;
+    }
+
+    .details-qty-selector, .details-buy-btn, .details-cep-label, .details-cep > span, .details-cep > form, .details-find-cep {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .slick-dots {
+        display:none!important;
+    }
+
+    
+    .details-qty-buy {
+        gap: 1rem;
+        flex-wrap:wrap;
+    }
+}

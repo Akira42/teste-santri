@@ -1,0 +1,108 @@
+#footer {
+    background-color:var(--rodape-background);
+    padding: 3rem 0;
+}
+
+.footer-top {
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-menu-col {
+    flex: 0 0 calc(22.222% - .75rem);
+    max-width: calc(22.222% - .75rem);
+}
+
+.footer-menu-col-payments {
+    flex: 0 0 calc(33.333% - .75rem);
+    max-width: calc(33.333% - .75rem);
+}
+
+.footer-top h5 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: .5rem
+}
+
+.footer-top ul li > * {
+    line-height: 2rem;
+    text-decoration: none;
+    color:var(--branco);
+    white-space: break-spaces;
+    word-wrap: break-word;
+}
+
+.footer-top > .footer-menu-col ul > li > a > i {
+    font-size: 2.5rem;
+    margin-right: .5rem;
+}
+
+.footer-razao-social-cnpj {
+    border-top: 1px solid var(--branco);
+    border-bottom: 1px solid var(--branco);
+    padding: 1.5rem 0;
+    margin-top: 1.5rem;
+    width: 100%;
+    display: block;
+    line-height: 2rem;
+    color:var(--branco);
+}
+
+.footer-credits {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    color: var(--branco);
+}
+
+.footer-credits a {
+    width: 7rem;
+    margin:1.5rem auto 0 auto;
+}
+
+.footer-menu-col-payments > ul {
+    gap: .5rem;
+    margin-bottom: 1rem;
+    flex-wrap:wrap;
+}
+
+.footer-menu-col-payments > ul > li > img {
+    border-radius: 5px;
+    width: 3.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer-menu-col {
+        flex: 0 0 calc(33.333% - 1rem);
+        max-width: calc(33.333% - 1rem);
+    }
+    
+    .footer-menu-col-payments {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-menu-col {
+        flex: 0 0 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+
+    .footer-credits a {
+        width: 70%;
+        margin: 1.5rem auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .footer-menu-col, .footer-menu-col-payments {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

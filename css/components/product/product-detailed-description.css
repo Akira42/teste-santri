@@ -1,0 +1,47 @@
+.details-middle {
+    gap: 3rem;
+    flex-wrap:wrap;
+}
+
+.details-middle > div{
+    flex: 0 0 calc(50% - 1.5rem);
+}
+
+.details-description-txt h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom:.5rem;
+}
+
+.details-description-txt p {
+    margin-bottom:.5rem;
+}
+
+.details-specifications-table table {
+    width: 100%;
+}
+
+.details-specifications-table table tbody tr td {
+    width: 50%;
+}
+
+.details-specifications-table table tbody tr:nth-child(odd) {
+    background-color:var(--cinza-claro);
+}
+
+.details-specifications-table table tbody tr {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+}
+
+tbody {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .details-middle > div {
+        flex: 0 0 100%;
+    }
+}
